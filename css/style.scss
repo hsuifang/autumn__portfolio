@@ -1,0 +1,194 @@
+@import "reset";
+
+// base
+*, *:after, *:before {
+  position: relative;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif, "微軟正黑體";
+  font-size: 16px;
+  width: 100%;
+}
+h1 {
+  font-size: 80px;
+  line-height: 94px;
+  font-weight: 900;
+  font-style: italic;
+}
+h2 {
+  font-size: 64px;
+  line-height: 75px;
+  font-style: italic;
+}
+h3 {
+  font-size: 24px;
+  line-height: 36px;
+  font-style: italic;
+}
+h4, p{
+  font-size: 20px;
+  line-height: 30px;
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+
+// variables
+$primary: #891818;
+$secondary: #707070;
+$dark: #000;
+$white: #fff;
+$maxWidth: 1200px;
+$xs: 16px;
+$sm: 24px;
+$md: 32px;
+$lg: 40px;
+$xl: 48px;
+
+$size:(
+  'xs': $xs,
+  'sm': $sm,
+  'md': $md,
+  'lg': $lg,
+  'xl': $xl
+);
+
+
+// helpers ====== 
+// flex
+.d-flex {
+  display: flex;
+}
+.fx-jcc {
+  justify-content: center;
+}
+.fx-jsb {
+  justify-content: space-between;
+}
+.fx-alc {
+  align-items: center
+}
+// spacing
+@each $key, $val in $size {
+  .mr-#{$key} {
+    margin-right: $val;
+  }
+  .mb-#{$key} {
+    margin-bottom: $val;
+  }
+  .pb-#{$key} {
+    padding-bottom: $xs;
+  }
+  .py-#{$key} {
+    padding-top: $val;
+    padding-bottom: $val;
+  }
+  .py-#{$key}{
+    padding-top: $val;
+    padding-bottom: $val;
+  }
+}
+.mx-auto {
+  margin-right:auto;
+  margin-left: auto;
+}
+// font
+.white {
+  color: white;
+}
+.italic {
+  font-style: italic;
+}
+.bold {
+  font-weight: bold;
+}
+
+// layout page
+.container {
+  margin: 0 auto;
+  max-width: $maxWidth;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.masthead {
+  height: 958px;
+  background-image: url('https://hexschool.github.io/webLayoutTraining1st/week2/banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  .mediaImg:hover {
+    opacity: 0.9;
+  }
+}
+
+.about {
+  width: 384px;
+  padding-top: 64px;
+  padding-bottom: 24px;
+  text-align: center;
+  margin: 0 auto;
+  &__img {
+    cursor: pointer;
+    &:hover .about__img--top{
+      display: block;
+    }
+    &:hover .about__img--bottom{
+      display: none;
+    }
+    &--top {
+      display: none;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  &__info li {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  &__experience {
+    border-top: 1px solid $dark;
+    padding-top: $md;
+    .dot {
+      width: 22px;
+      height: 22px;
+      background: #891818;
+      border-radius: 50%;
+    }
+  }
+}
+
+.brand {
+  color: $white;
+  background-color: $dark;
+  text-align: center;
+  padding-bottom: 96px;
+}
+
+.works {
+  padding-bottom: 160px;
+  text-align: center;
+}
+
+.footer {
+  color: $white;
+  background-color: $dark;
+  text-align: center;
+  a {
+    border-bottom: 2px solid transparent;
+    &:hover {
+      border-bottom: 2px solid $white;
+      transition: 1s;
+    }
+  }
+}

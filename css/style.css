@@ -1,0 +1,352 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *:after, *:before {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif, "微軟正黑體";
+  font-size: 16px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 80px;
+  line-height: 94px;
+  font-weight: 900;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 64px;
+  line-height: 75px;
+  font-style: italic;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 36px;
+  font-style: italic;
+}
+
+h4, p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.fx-jcc {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fx-jsb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fx-alc {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mr-xs {
+  margin-right: 16px;
+}
+
+.mb-xs {
+  margin-bottom: 16px;
+}
+
+.pb-xs {
+  padding-bottom: 16px;
+}
+
+.py-xs {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.py-xs {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.mr-sm {
+  margin-right: 24px;
+}
+
+.mb-sm {
+  margin-bottom: 24px;
+}
+
+.pb-sm {
+  padding-bottom: 16px;
+}
+
+.py-sm {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.py-sm {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.mr-md {
+  margin-right: 32px;
+}
+
+.mb-md {
+  margin-bottom: 32px;
+}
+
+.pb-md {
+  padding-bottom: 16px;
+}
+
+.py-md {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.py-md {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.mr-lg {
+  margin-right: 40px;
+}
+
+.mb-lg {
+  margin-bottom: 40px;
+}
+
+.pb-lg {
+  padding-bottom: 16px;
+}
+
+.py-lg {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.py-lg {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.mr-xl {
+  margin-right: 48px;
+}
+
+.mb-xl {
+  margin-bottom: 48px;
+}
+
+.pb-xl {
+  padding-bottom: 16px;
+}
+
+.py-xl {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.py-xl {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.white {
+  color: white;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.masthead {
+  height: 958px;
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/week2/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.masthead .mediaImg:hover {
+  opacity: 0.9;
+}
+
+.about {
+  width: 384px;
+  padding-top: 64px;
+  padding-bottom: 24px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.about__img {
+  cursor: pointer;
+}
+
+.about__img:hover .about__img--top {
+  display: block;
+}
+
+.about__img:hover .about__img--bottom {
+  display: none;
+}
+
+.about__img--top {
+  display: none;
+}
+
+.about__img img {
+  width: 100%;
+}
+
+.about__info li {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.about__experience {
+  border-top: 1px solid #000;
+  padding-top: 32px;
+}
+
+.about__experience .dot {
+  width: 22px;
+  height: 22px;
+  background: #891818;
+  border-radius: 50%;
+}
+
+.brand {
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  padding-bottom: 96px;
+}
+
+.works {
+  padding-bottom: 160px;
+  text-align: center;
+}
+
+.footer {
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+}
+
+.footer a {
+  border-bottom: 2px solid transparent;
+}
+
+.footer a:hover {
+  border-bottom: 2px solid #fff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+/*# sourceMappingURL=style.css.map */
